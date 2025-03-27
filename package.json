@@ -1,0 +1,21 @@
+{
+  "name": "reactnativeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run android\"",
+    "server": "cd backend && source venv/bin/activate && python manage.py runserver",
+    "android": "cd frontend && npx react-native start",
+    "ios": "cd frontend && npx react-native run-ios"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^11.5.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
